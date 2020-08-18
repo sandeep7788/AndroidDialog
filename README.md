@@ -1,14 +1,15 @@
 "# AndroidDialog" 
 
 
-<code>
+<p>
 
 <center>
+    <bold>
 AndroidDialog support: Text Mode, Image Mode, Text & Image Mode
 PromptDialog support: Success, Info, Error, Warning, Help
 Support custom in/out animation
 With many Features.
-
+    </bold>
 
 
 allprojects {
@@ -38,7 +39,7 @@ dependencies {
 Simple Java Code for Android
 
 
-
+<code>
 
 ColorDialog dialog = new ColorDialog(this);
 dialog.setTitle(getString(R.string.operation));
@@ -57,5 +58,6 @@ dialog.setPositiveListener(getString(R.string.delete), new ColorDialog.OnPositiv
         dialog.dismiss();
     }
 }).show();
-</center>
 </code>
+</center>
+</p>
