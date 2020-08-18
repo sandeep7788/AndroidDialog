@@ -1,4 +1,4 @@
-package com.sandeep.androiddialog;
+package com.sandeep.AndroidDialog;
 
 import android.content.Context;
 
