@@ -55,7 +55,7 @@ dependencies {
 Simple Java Code for Android
 <br>
 
-<code>
+
 
 ColorDialog dialog = new ColorDialog(this);
 <br>
@@ -91,10 +91,9 @@ dialog.setPositiveListener(getString(R.string.delete), new ColorDialog.OnPositiv
     <br>
 }).show();
 <br>
-</code>
+
 </center>
 </p>
-<br>
 <br>
 <br>
 <br>
