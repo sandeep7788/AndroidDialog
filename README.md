@@ -1,7 +1,7 @@
 "# AndroidDialog" 
 
 
-
+<code>
 
 AndroidDialog support: Text Mode, Image Mode, Text & Image Mode
 PromptDialog support: Success, Info, Error, Warning, Help
@@ -56,3 +56,4 @@ dialog.setPositiveListener(getString(R.string.delete), new ColorDialog.OnPositiv
         dialog.dismiss();
     }
 }).show();
+</code>
