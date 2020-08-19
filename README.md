@@ -57,39 +57,22 @@ Simple Java Code for Android
 
 
 
-ColorDialog dialog = new ColorDialog(this);
-<br>
-dialog.setTitle(getString(R.string.operation));
-<br>
-dialog.setContentText(getString(R.string.content_text));
-<br>
-dialog.setContentImage(getResources().getDrawable(R.mipmap.sample_img));
-<br>
-dialog.setPositiveListener(getString(R.string.delete), new ColorDialog.OnPositiveListener() {
-<br>
-    @Override
-    <br>
-    public void onClick(ColorDialog dialog) {
-    <br>
-        Toast.makeText(MainActivity.this, dialog.getPositiveText().toString(), Toast.LENGTH_SHORT).show();
-        <br>
-    }
-    <br>
-})
-<br>
-.setNegativeListener(getString(R.string.cancel), new ColorDialog.OnNegativeListener() {
-<br>
-    @Override
-    <br>
-    public void onClick(ColorDialog dialog) {
-    <br>
-        Toast.makeText(MainActivity.this, dialog.getNegativeText().toString(), Toast.LENGTH_SHORT).show();
-        <br>
-        dialog.dismiss();
-        <br>
-    }
-    <br>
-}).show();
+AndroidDialog dialog = new AndroidDialog(this);
+        dialog.setTitle(getString(R.string.operation));
+        dialog.setContentText(getString(R.string.content_text));
+        dialog.setContentImage(getResources().getDrawable(R.mipmap.sample_img));
+        dialog.setPositiveListener(getString(R.string.delete), new AndroidDialog.OnPositiveListener() {
+            @Override
+            public void onClick(AndroidDialog dialog) {
+                Toast.makeText(MainActivity.this, dialog.getPositiveText().toString(), Toast.LENGTH_SHORT).show();
+            }
+        }).setNegativeListener(getString(R.string.cancel), new AndroidDialog.OnNegativeListener() {
+                    @Override
+                    public void onClick(AndroidDialog dialog) {
+                        Toast.makeText(MainActivity.this, dialog.getNegativeText().toString(), Toast.LENGTH_SHORT).show();
+                        dialog.dismiss();
+                    }
+                }).show();
 <br>
 
 </center>
