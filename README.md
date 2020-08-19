@@ -12,12 +12,22 @@ With many Features.
     </bold>
 
 
-allprojects {
-    repositories {
-        ...
-        maven { url "https://jitpack.io" }
-    }
-}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+allprojects {<br>
+    repositories {<br>
+        ...<br>
+        maven { url "https://jitpack.io" }<br>
+    }<br>
+}<br>
 <br>
 <br>
 <br>
