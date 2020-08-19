@@ -62,12 +62,11 @@ dependencies {
 
 
 
-Simple Java Code for Android
-<br>
+Simple Java Code for Android <br>
 
 
 
-        <br>
+        
 AndroidDialog dialog = new AndroidDialog(this);
         <br>
         dialog.setTitle(getString(R.string.operation));
