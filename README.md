@@ -92,6 +92,65 @@ AndroidDialog dialog = new AndroidDialog(this);
         <br>
  
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+dependencies {
+   implementation 'com.github.sandeep7788:AndroidDialog:1.0.0'
+}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+Simple Java Code for Kotlin
+
+<br>
+val dialog = AndroidDialog(this)<br>
+        dialog.setTitle(getString(R.string.operation))<br>
+        dialog.contentText = getString(R.string.content_text)<br>
+        dialog.setContentImage(resources.getDrawable(R.mipmap.sample_img))<br>
+        dialog.setPositiveListener(<br>
+            getString(R.string.delete)<br>
+        ) { dialog -><br>
+            Toast.makeText(<br>
+                this@MainActivity,<br>
+                dialog.positiveText.toString(),<br>
+                Toast.LENGTH_SHORT<br>
+            ).show()<br>
+        }.setNegativeListener(<br>
+            getString(R.string.cancel)<br>
+        ) { dialog -><br>
+            Toast.makeText(<br>
+                this@MainActivity,<br>
+                dialog.negativeText.toString(),<br>
+                Toast.LENGTH_SHORT<br>
+            ).show()<br>
+            dialog.dismiss()<br>
+        }.show()<br>
 
 </center>
 </p>
