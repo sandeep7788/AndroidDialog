@@ -56,23 +56,41 @@ Simple Java Code for Android
 <br>
 
 
-
+<code>
+        <br>
 AndroidDialog dialog = new AndroidDialog(this);
+        <br>
         dialog.setTitle(getString(R.string.operation));
+        <br>
         dialog.setContentText(getString(R.string.content_text));
+        <br>
         dialog.setContentImage(getResources().getDrawable(R.mipmap.sample_img));
+        <br>
         dialog.setPositiveListener(getString(R.string.delete), new AndroidDialog.OnPositiveListener() {
-            @Override
+        <br>
+            @Override]
+        <br>
             public void onClick(AndroidDialog dialog) {
+        <br>
                 Toast.makeText(MainActivity.this, dialog.getPositiveText().toString(), Toast.LENGTH_SHORT).show();
+        <br>
             }
+        <br>
         }).setNegativeListener(getString(R.string.cancel), new AndroidDialog.OnNegativeListener() {
+        <br>
                     @Override
+        <br>
                     public void onClick(AndroidDialog dialog) {
+        <br>
                         Toast.makeText(MainActivity.this, dialog.getNegativeText().toString(), Toast.LENGTH_SHORT).show();
+        <br>
                         dialog.dismiss();
+        <br>
                     }
+        <br>
                 }).show();
+        <br>
+    </code>
 <br>
 
 </center>
