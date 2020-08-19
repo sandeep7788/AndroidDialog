@@ -56,7 +56,7 @@ Simple Java Code for Android
 <br>
 
 
-<code>
+
         <br>
 AndroidDialog dialog = new AndroidDialog(this);
         <br>
@@ -90,7 +90,7 @@ AndroidDialog dialog = new AndroidDialog(this);
         <br>
                 }).show();
         <br>
-    </code>
+ 
 <br>
 
 </center>
