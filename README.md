@@ -135,7 +135,7 @@ dependencies {
 
 
 
-Simple Java Code for Kotlin
+Simple kotlin Code for android
 
 <br>
 val dialog = AndroidDialog(this)<br>
