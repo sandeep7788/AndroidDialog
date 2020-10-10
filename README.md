@@ -167,3 +167,17 @@ val dialog = AndroidDialog(this)<br>
 <br>
 <br>
 <br>
+
+       public void d()
+    {
+        String url="https:\\/\\/www.softconect.com\\/media\\/resultPdf\\/Result-1602325078-3093.pdf";
+        DownloadManager.Request dmr = new DownloadManager.Request(Uri.parse(url));
+        String fileName = URLUtil.guessFileName(url, null, MimeTypeMap.getFileExtensionFromUrl(url));
+        dmr.setTitle(fileName);
+        dmr.setDescription("Some descrition about file"); //optional
+        dmr.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, fileName);
+        dmr.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+        dmr.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE);
+        DownloadManager manager = (DownloadManager) getSystemService(Context.DOWNLOAD_SERVICE);
+        manager.enqueue(dmr);
+    }
